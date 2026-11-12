@@ -1,0 +1,19 @@
+
+package godm0d3.nolightningfire.mixin;
+
+import net.minecraft.world.entity.LightningBolt;
+
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Mixin(LightningBolt.class)
+public abstract class LightningBoltMixin {
+
+    @Inject(method = "spawnFire", at = @At("HEAD"), cancellable = true)
+    private void nolightningfire$preventFire(int additionalSources,
+                                             CallbackInfo ci) {
+        ci.cancel();
+    }
+}

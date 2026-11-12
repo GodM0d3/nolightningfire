@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "godm0d3.nolightningfire.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"LightningBoltMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "nolightningfire",
+	"version": "${version}",
+	"name": "No Lightning Fire",
+	"description": "Prevents lightning strikes from creating fire without changing other lightning mechanics.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"sources": "https://github.com/USERNAME/NoLightningFire",
+		"issues": "https://github.com/USERNAME/NoLightningFire/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/nolightningfire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"godm0d3.nolightningfire.Nolightningfire"
+		]
+	},
+	"mixins": [
+		"nolightningfire.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

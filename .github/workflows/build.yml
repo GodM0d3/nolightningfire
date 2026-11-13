@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        minecraft: ['26.2', '26.3']
+        minecraft: ['26.1', '26.2', '26.3']
 
     name: Build Minecraft ${{ matrix.minecraft }}
 
